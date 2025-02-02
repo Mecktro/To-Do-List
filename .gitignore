@@ -1,0 +1,36 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# Python
+*.pyc
+__pycache__/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Go
+bin/
+*.exe
+
+# .env files
+.env
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# Database files
+*.db
+*.sqlite
+
+# Build artifacts
+dist/
+build/
