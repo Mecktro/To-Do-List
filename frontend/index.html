@@ -1,21 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task Manager</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Task Manager</h1>
-    <div class="task-input">
-      <input type="text" id="taskInput" placeholder="Enter a new task" />
-      <button id="addTaskBtn">Add Task</button>
-    </div>
-    <ul id="taskList"></ul>
-  </div>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <script src="app.js"></script>
-</body>
-</html>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+}
+
+#taskInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#addTaskBtn {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addTaskBtn:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+li button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #e55347;
+}
